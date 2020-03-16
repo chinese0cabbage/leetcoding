@@ -1,0 +1,7 @@
+E:\source code\c#\LearnCoding\LearnCShop\ForLeetCode\LeetCodeCoding\LeetCodeCoding\bin\Debug\LeetCodeCoding.exe.config
+E:\source code\c#\LearnCoding\LearnCShop\ForLeetCode\LeetCodeCoding\LeetCodeCoding\bin\Debug\LeetCodeCoding.exe
+E:\source code\c#\LearnCoding\LearnCShop\ForLeetCode\LeetCodeCoding\LeetCodeCoding\bin\Debug\LeetCodeCoding.pdb
+E:\source code\c#\LearnCoding\LearnCShop\ForLeetCode\LeetCodeCoding\LeetCodeCoding\obj\Debug\LeetCodeCoding.csprojAssemblyReference.cache
+E:\source code\c#\LearnCoding\LearnCShop\ForLeetCode\LeetCodeCoding\LeetCodeCoding\obj\Debug\LeetCodeCoding.csproj.CoreCompileInputs.cache
+E:\source code\c#\LearnCoding\LearnCShop\ForLeetCode\LeetCodeCoding\LeetCodeCoding\obj\Debug\LeetCodeCoding.exe
+E:\source code\c#\LearnCoding\LearnCShop\ForLeetCode\LeetCodeCoding\LeetCodeCoding\obj\Debug\LeetCodeCoding.pdb

@@ -123,6 +123,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Entrance.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="14.h" />
+    <ClInclude Include="offer03.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

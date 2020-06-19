@@ -1,8 +1,7 @@
 #include<stdio.h>
-#include"offer03.h"
-
+#include"3.h"
 int main() {
-	int arr[] = { 2,3,1,0,2,5,3 };
-	int result = findRepeatNumber(arr, 7);
+	char test[] = "";
+	int ret = lengthOfLongestSubstring(test);
 	return 0;
 }

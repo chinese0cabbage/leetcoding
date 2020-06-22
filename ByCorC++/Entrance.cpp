@@ -1,7 +1,7 @@
 #include<stdio.h>
-#include"3.h"
+#include"7.h"
 int main() {
-	char test[] = "";
-	int ret = lengthOfLongestSubstring(test);
+	int test = 123;
+	int t = reverse(test);
 	return 0;
 }

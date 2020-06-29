@@ -1,36 +1,25 @@
 #pragma once
+bool findNumberInMatrix(int** matrix, int rowMin, int rowMax, int colMin, int colMax, int target);
 bool findNumberIn2DArray(int** matrix, int matrixSize, int* matrixColSize, int target) {
-	int high, low = 0, mid;
-	if (matrixSize > * matrixColSize)
-		high = *matrixColSize;
-	else
-		high = matrixSize;
-	mid = (high + low) / 2;
-	while (mid >= 0 && mid < high) {//搜索欲查找的值在左上那两个方阵之间
-		if (matrix[mid][mid] == target) {
-			return true;
-		}
-		else if (matrix[mid][mid] > target)
-		{
-			if (matrix[mid - 1][mid - 1] < target)
-				break;
-			else
-				high = mid - 1;
-		}
-		else {
-			low = mid + 1;
-		}
-		mid = (high + low) / 2;
-	}
-	if (mid == high) {//到达最大方阵依旧没有停止搜索，则需要按照二分查找搜索在那一行或列
-		if (high == matrixSize) {
-			low = matrixSize, high = *matrixColSize, mid = (low + high) / 2;
-			while (mid >= low && mid < high) {
+	return findNumberInMatrix(matrix, 0, matrixSize - 1, 0, *matrixColSize - 1, target);
+}
 
+bool findNumberInMatrix(int** matrix, int rowMin, int rowMax, int colMin, int colMax, int target) {
+	if (rowMax - rowMin == colMax - colMin) {//方阵
+		int rowHigh = rowMax, rowLow = rowMin, colHigh = colMax, colLow = colMin,
+			rowMid = (rowHigh + rowLow) / 2, colMid = (colHigh + colLow) / 2;
+		while (rowMid < rowMax && rowMid >= rowMin) {//行和列的大小一样且同增同减
+			if (matrix[rowMid][colMid] == target) {
+				return true;
 			}
+			else if (matrix[rowMid][colMid] > target) {
+				rowHigh = rowMid - 1, colHigh = colMid - 1;
+			}
+			else {
+				rowLow = rowMid + 1, colLow = colMid + 1;
+			}
+			rowMid = (rowHigh + rowLow) / 2, colMid = (colHigh + colLow) / 2;
 		}
 	}
-	else {//还未到达最大矩阵就停止搜索，证明要查找的值在mid所在行列的上方与左边，分别进行二分查找
-
-	}
+	return true;
 }
